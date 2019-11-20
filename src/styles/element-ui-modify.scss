@@ -1,0 +1,111 @@
+// el-table
+.el-table {
+  thead {
+    .is-leaf {
+      background: #F5F7FA;
+    }
+  }
+}
+.member-info-detais-wrap {
+  .el-table thead.is-group th {
+    text-align: center;
+  }
+}
+// el-button 类型
+.btn-blue {
+  background: #1890ff;
+  border-color: #1890ff;
+  color: #fff;
+  &:hover{
+    background: #50abff;
+    border-color: #50abff;
+    color: #fff;
+  }
+}
+// el-swtich 开启的样式
+.el-switch.is-checked .el-switch__core {
+  border-color: #13ce66;
+  background-color: #13ce66;
+}
+// 修改导航栏高度
+.tags-view-container {
+  display: flex;
+  height: 45px !important;
+  align-items: center;
+}
+// el-upload 修改上传图片大小
+.small {
+  .el-upload--picture-card {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    .el-icon-plus {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -14px;
+      margin-top: -14px;
+    }
+  }
+  .el-upload-list--picture-card {
+    .el-upload-list__item {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+// el-date-editor 日期选择器
+.el-date-editor {
+  .el-range-separator {
+    width: 8% !important;
+  }
+}
+
+ /* custom 默认样式 */
+ a {
+  color: #7e8c8d;
+  text-decoration: none;
+  -webkit-backface-visibility: hidden;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+
+html, body {
+  width: 100%;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+ /* custom 修改滚动条 */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+

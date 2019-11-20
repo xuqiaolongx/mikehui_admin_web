@@ -1,0 +1,159 @@
+// 搜索栏
+.filter-container {
+  .filter-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    &.el-button {
+      margin-left: 0px;
+    }
+  }
+  .search-input, .filter-input {
+    width: 230px;
+  }
+  .search-input-prifix {
+    width: 300px;
+    .el-input-group__prepend {
+      width: 110px;
+      .el-input__inner{
+        text-align: center;
+      }
+    }
+  }
+}
+// table内容
+.el-table {
+  border-radius: 4px;
+}
+.view-content {
+  margin-top: 10px;
+}
+.tabel-avatar {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+  .el-image {
+    width: 40px;
+    height: 40px;
+  }
+}
+.table-picture {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto;
+  .el-image {
+    width: 40px;
+    height: 40px;
+  }
+}
+// 可以操作的文字
+.operate-text {
+  color: #409eff;
+  cursor: pointer;
+}
+.operate-text-red {
+  color: #ff4949;
+  cursor: pointer;
+}
+// 详情页面-两列布局
+.basic-information-tab {
+  display: flex;
+  width: 800px;
+  margin: 30px 40px;
+  flex-wrap: wrap;
+  .information-item {
+    display: flex;
+    width: 50%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding-right: 15px;
+    align-items: center;
+    .title {
+      width: 120px;
+      color: #333;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .content {
+      flex: 1;
+      font-size: 14px;
+      color: #999;
+    }
+  }
+}
+
+// 详情页-一列布局
+.page-details-wrap {
+  width: 800px;
+  margin: 30px 40px;
+  .details-list {
+    margin: 0;
+    padding: 0;
+    .details-item {
+      display: flex;
+      list-style: none;
+      margin-bottom: 15px;
+      .title {
+        width: 130px;
+        font-size: 14px;
+        color: #333;
+        font-weight: 600;
+      }
+      .content {
+        flex: 1;
+        font-size: 14px;
+        color: #999;
+      }
+    }
+  }
+}
+
+// 详情页基本信息展示4条
+.base-information{
+  margin: 20px auto;
+  padding: 0;
+  width: 1000px;
+  .item{
+    width: 500px;
+    line-height: 40px;
+    border: 1px solid #dfe6ec;
+    box-sizing: border-box;
+    float: left;
+    font-size: 14px;
+    &.long {
+      width: 1000px;
+    }
+    .title {
+      font-weight: 700px;
+      color: #909399;
+      width: 180px;
+      float: left;
+      text-align: center;
+      background: #f5f7fa;
+      border-right: 1px solid #dfe6ec;
+      box-sizing: border-box;
+    }
+    .content {
+      width: 316px;
+      float: left;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    &.long {
+      width: 1000px;
+      .content {
+        width: 816px;
+      }
+    }
+  }
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
